@@ -5,7 +5,7 @@ import java.util.Optional;
 import java.util.Set;
 
 public interface UserService {
-    Optional<User> findByUserName(String name);
+    Optional<User> findByUserLogin(String login);
 
     Set<User> getAll();
 }

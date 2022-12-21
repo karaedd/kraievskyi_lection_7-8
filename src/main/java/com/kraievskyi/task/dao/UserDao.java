@@ -6,7 +6,7 @@ import java.util.Set;
 
 public interface UserDao {
 
-    Optional<User> findByUserName(String name);
+    Optional<User> findByUserLogin(String login);
 
     Set<User> getAll();
 }

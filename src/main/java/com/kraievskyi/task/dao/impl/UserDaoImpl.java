@@ -14,7 +14,7 @@ public class UserDaoImpl implements UserDao {
             new User("David@gmail.com","David", "password"));
 
     @Override
-    public Optional<User> findByUserName(String login) {
+    public Optional<User> findByUserLogin(String login) {
         return userDao.stream()
                 .filter(x -> x.getLogin()
                 .equals(login))
